@@ -3,7 +3,7 @@
 */
 'use strict';
 
-const explorerconfig = require('./explorerconfig.json');
+const explorerconfig = require('../explorerconfig.json');
 const explorer_const = require('./common/ExplorerConst').explorer.const;
 
 function getDbConfig() {
