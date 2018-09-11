@@ -6,7 +6,7 @@
     "port": "5432",
     "database": "fabricexplorer",
     "username": "hppoc",
-    "passwd": "password"
+    "passwd": "testpass"
   },
   "sync": {
     "type": "local",

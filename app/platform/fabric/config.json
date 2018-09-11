@@ -37,25 +37,25 @@
           "fullpath": false,
           "adminPrivateKey": {
             "path":
-              "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore"
+              "/Users/yoonyoulyoo/DEV/projects/hyperledger/fabric/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/keystore"
           },
           "signedCert": {
             "path":
-              "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts"
+              "/Users/yoonyoulyoo/DEV/projects/hyperledger/fabric/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp/signcerts"
           }
         },
         "Org2MSP": {
           "mspid": "Org2MSP",
           "adminPrivateKey": {
             "path":
-              "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore"
+              "/Users/yoonyoulyoo/DEV/projects/hyperledger/fabric/fabric-samples/first-network/crypto-config/peerOrganizations/org2.example.com/users/Admin@org2.example.com/msp/keystore"
           }
         },
         "OrdererMSP": {
           "mspid": "OrdererMSP",
           "adminPrivateKey": {
             "path":
-              "fabric-path/fabric-samples/first-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore"
+              "/Users/yoonyoulyoo/DEV/projects/hyperledger/fabric/fabric-samples/first-network/crypto-config/ordererOrganizations/example.com/users/Admin@example.com/msp/keystore"
           }
         }
       },
@@ -63,32 +63,33 @@
         "peer0.org1.example.com": {
           "tlsCACerts": {
             "path":
-              "fabric-path/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
+              "/Users/yoonyoulyoo/DEV/projects/hyperledger/fabric/fabric-samples/first-network/crypto-config/peerOrganizations/org1.example.com/peers/peer0.org1.example.com/tls/ca.crt"
           },
-          "url": "grpcs://localhost:7051",
-          "eventUrl": "grpcs://localhost:7053",
+          "url": "grpcs://192.168.99.100:7051",
+          "eventUrl": "grpcs://192.168.99.100:7053",
           "grpcOptions": {
             "ssl-target-name-override": "peer0.org1.example.com"
           }
         },
         "peer1.org1.example.com": {
-          "url": "grpcs://localhost:8051"
+          "url": "grpcs://192.168.99.100:8051"
         },
         "peer0.org2.example.com": {
-          "url": "grpcs://localhost:9051"
+          "url": "grpcs://192.168.99.100:9051"
         },
         "peer1.org2.example.com": {
-          "url": "grpcs://localhost:10051"
+          "url": "grpcs://192.168.99.100:10051"
         }
       },
       "orderers": {
         "orderer.example.com": {
-          "url": "grpcs://localhost:7050"
+          "url": "grpcs://192.168.99.100:7050"
         }
       }
     },
     "network-2": {}
   },
-  "configtxgenToolPath": "fabric-path/fabric-samples/bin",
+  "configtxgenToolPath":
+    "/Users/yoonyoulyoo/DEV/projects/hyperledger/fabric/fabric-samples/bin",
   "license": "Apache-2.0"
 }

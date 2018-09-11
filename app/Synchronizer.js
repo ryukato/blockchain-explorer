@@ -23,6 +23,24 @@ class Synchronizer {
     this.platform;
   }
 
+  getDbConfig() {
+    const defaultConfig = syncconfig[syncconfig[explorer_const.PERSISTENCE]];
+    const _host = process.env.DATABASE_HOST || defaultConfig.host;
+    const _port = process.env.DATABASE_PORT || defaultConfig.port;
+    const _database = process.env.DATABASE_NAME || defaultConfig.database;
+    const _username = process.env.DATABASE_USERNAME || defaultConfig.username;
+    const _passwd = process.env.DATABASE_PASSWD || defaultConfig.passwd;
+    const _dbConfig = {
+      host: _host,
+      port: _port,
+      database: _database,
+      username: _username,
+      passwd: _passwd
+    };
+    console.log('_dbConfig', _dbConfig);
+    return _dbConfig;
+  }
+
   async initialize() {
     if (!syncconfig[explorer_const.PERSISTENCE]) {
       throw new ExplorerError(explorer_error.ERROR_1001);
@@ -54,7 +72,7 @@ class Synchronizer {
 
     this.persistence = await PersistenceFactory.create(
       syncconfig[explorer_const.PERSISTENCE],
-      syncconfig[syncconfig[explorer_const.PERSISTENCE]]
+      this.getDbConfig()
     );
 
     let sender = new ExplorerSender(syncconfig.sync);
