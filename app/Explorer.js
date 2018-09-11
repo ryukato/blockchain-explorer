@@ -18,6 +18,8 @@ var compression = require('compression');
 var explorer_const = require('./common/ExplorerConst').explorer.const;
 var explorer_error = require('./common/ExplorerMessage').explorer.error;
 
+var dbConfigHelper = require('./common/databaseConfigHelper');
+
 class Explorer {
   constructor() {
     this.app = express();
@@ -37,25 +39,6 @@ class Explorer {
     return this.app;
   }
 
-  getDbConfig() {
-    const defaultConfig =
-      explorerconfig[explorerconfig[explorer_const.PERSISTENCE]];
-    const _host = process.env.DATABASE_HOST || defaultConfig.host;
-    const _port = process.env.DATABASE_PORT || defaultConfig.port;
-    const _database = process.env.DATABASE_NAME || defaultConfig.database;
-    const _username = process.env.DATABASE_USERNAME || defaultConfig.username;
-    const _passwd = process.env.DATABASE_PASSWD || defaultConfig.passwd;
-    const _dbConfig = {
-      host: _host,
-      port: _port,
-      database: _database,
-      username: _username,
-      passwd: _passwd
-    };
-    console.log('_dbConfig', _dbConfig);
-    return _dbConfig;
-  }
-
   async initialize(broadcaster) {
     if (!explorerconfig[explorer_const.PERSISTENCE]) {
       throw new ExplorerError(explorer_error.ERROR_1001);
@@ -68,7 +51,7 @@ class Explorer {
     }
     this.persistence = await PersistenceFactory.create(
       explorerconfig[explorer_const.PERSISTENCE],
-      this.getDbConfig()
+      dbConfigHelper.getDbConfig()
     );
 
     for (let pltfrm of explorerconfig[explorer_const.PLATFORMS]) {
