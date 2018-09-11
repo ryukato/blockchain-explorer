@@ -1,0 +1,176 @@
+postgres://hppoc:testpass@127.0.0.1:5432/fabricexplorer
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+
+
+Please open web browser to access ：http://localhost:8080/
+
+
+pid is 85151
+
+
+postgres://hppoc:testpass@127.0.0.1:5432/fabricexplorer
+
+Sync process is started for the network : [network-1] and client : [client-1]
+<<<<<<<<<<<<<<<<<<<<<<<<<< Synchronizer Error >>>>>>>>>>>>>>>>>>>>>
+Error :  [ 'Channel name [%s] already exist in DB , Kindly re-run the DB scripts to proceed',
+  'mychannel' ]
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<<<<<<< Explorer Error >>>>>>>>>>>>>>>>>>>>>
+Error :  [ 'Explorer is closing due to channel name [%s] is already exist in DB',
+  'mychannel' ]
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections
+postgres://hppoc:testpass@127.0.0.1:5432/fabricexplorer
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+
+
+Please open web browser to access ：http://localhost:8080/
+
+
+pid is 85752
+
+
+postgres://hppoc:testpass@127.0.0.1:5432/fabricexplorer
+
+Sync process is started for the network : [network-1] and client : [client-1]
+Insert sql is INSERT INTO channel  ( "name","createdt","blocks","trans","channel_hash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 3
+Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 1
+Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+INSERT ID: 1
+Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 2
+Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+INSERT ID: 2
+Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 3
+Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+INSERT ID: 3
+Insert sql is INSERT INTO peer  ( "mspid","requests","events","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 4
+Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+INSERT ID: 4
+Insert sql is INSERT INTO peer  ( "mspid","requests","server_hostname","channel_genesis_hash","peer_type" ) VALUES( $1,$2,$3,$4,$5  ) RETURNING *;
+INSERT ID: 5
+Insert sql is INSERT INTO peer_ref_channel  ( "peerid","channelid" ) VALUES( $1,$2  ) RETURNING *;
+INSERT ID: 5
+Insert sql is INSERT INTO chaincodes  ( "name","version","path","txcount","createdt","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6  ) RETURNING *;
+INSERT ID: 10
+Insert sql is INSERT INTO peer_ref_chaincode  ( "chaincodeid","cc_version","peerid","channelid" ) VALUES( $1,$2,$3,$4  ) RETURNING *;
+INSERT ID: 1
+Insert sql is INSERT INTO peer_ref_chaincode  ( "chaincodeid","cc_version","peerid","channelid" ) VALUES( $1,$2,$3,$4  ) RETURNING *;
+INSERT ID: 2
+Insert sql is INSERT INTO peer_ref_chaincode  ( "chaincodeid","cc_version","peerid","channelid" ) VALUES( $1,$2,$3,$4  ) RETURNING *;
+INSERT ID: 3
+
+
+Synchronizer pid is 85821
+
+
+read_set length 469
+write_set size >>>>>>>>> :  0.5007524490356445 MB
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 6
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 1
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 7
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 2
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 8
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 3
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 9
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 4
+read_set length 166
+write_set size >>>>>>>>> :  0.5014438629150391 MB
+Insert sql is INSERT INTO transactions  ( "blockid","txhash","createdt","chaincodename","chaincode_id","status","creator_msp_id","endorser_msp_id","type","read_set","write_set","channel_genesis_hash","validation_code","envelope_signature","payload_extension","creator_nonce","chaincode_proposal_input","endorser_signature","creator_id_bytes","payload_proposal_hash","endorser_id_bytes" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8,$9,$10,$11,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21  ) RETURNING *;
+INSERT ID: 10
+Insert sql is INSERT INTO blocks  ( "blocknum","datahash","prehash","txcount","createdt","prev_blockhash","blockhash","channel_genesis_hash" ) VALUES( $1,$2,$3,$4,$5,$6,$7,$8  ) RETURNING *;
+INSERT ID: 5
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+postgres://hppoc:testpass@127.0.0.1:5432/fabricexplorer
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+
+
+Please open web browser to access ：http://localhost:8080/
+
+
+pid is 86123
+
+
+postgres://hppoc:testpass@127.0.0.1:5432/fabricexplorer
+
+Sync process is started for the network : [network-1] and client : [client-1]
+
+
+Synchronizer pid is 86193
+
+
+read_set length 469
+write_set size >>>>>>>>> :  0.5007524490356445 MB
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+postgres://hppoc:testpass@127.0.0.1:5432/fabricexplorer
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+
+
+Please open web browser to access ：http://localhost:8080/
+
+
+pid is 86871
+
+
+postgres://hppoc:testpass@127.0.0.1:5432/fabricexplorer
+
+Sync process is started for the network : [network-1] and client : [client-1]
+
+
+Synchronizer pid is 86940
+
+
+read_set length 469
+write_set size >>>>>>>>> :  0.5007524490356445 MB
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+usage: locate [-0Scims] [-l limit] [-d database] pattern ...
+
+default database: `/var/db/locate.database' or $LOCATE_PATH
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing client processor >>>>>>>>>>>>>>>>>>>>>

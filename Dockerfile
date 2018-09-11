@@ -36,7 +36,7 @@ RUN apk add --no-cache --virtual npm-deps python make g++ && \
 	rm -r /root/.cache
 
 # install yarn
-RUN npm install -g yarn
+# RUN npm install -g yarn
 
 # install NPM dependencies
 RUN cd $EXPLORER_APP_PATH && npm install && npm build
